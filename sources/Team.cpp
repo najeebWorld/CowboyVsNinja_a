@@ -1,30 +1,53 @@
 #include "Team.hpp"
+#include "Character.hpp"
 
-using namespace ariel;
+namespace ariel {
+    // Regular constructor
+    Team::Team(Character* character) {
+        // TODO: Implement
+    }
 
-// Constructor
-Team::Team(Character* character) {
-    // TODO: Implement
-}
+    // Copy constructor
+    Team::Team(const Team& other) {
+        // TODO: Implement
+    }
 
-// Destructor
-Team::~Team() {
-    // TODO: Implement
-}
+    // Copy assignment operator
+    Team& Team::operator=(const Team& other) {
+        // TODO: Implement
+        return *this;
+    }
 
-void Team::add(Character* warrior) {
-    // TODO: Implement
-}
+    // Move constructor
+    Team::Team(Team&& other) noexcept {
+        // TODO: Implement
+    }
 
-void Team::attack(Team* enemies) {
-    // TODO: Implement
-}
+    // Move assignment operator
+    Team& Team::operator=(Team&& other) noexcept {
+        // TODO: Implement
+        return *this;
+    }
 
-int Team::stillAlive() {
-    // TODO: Implement
-    return 0; // Placeholder
-}
+    // Destructor
+    Team::~Team() {
+        // TODO: Implement
+    }
 
-void Team::print() {
-    // TODO: Implement
+    void Team::add(Character* warrior) {
+        // TODO: Implement
+    }
+
+    void Team::attack(Team* enemies) {
+        // TODO: Implement
+    }
+
+    int Team::stillAlive() {
+        // TODO: Implement
+        return 0; // Placeholder
+    }
+
+    void Team::print() {
+        // TODO: Implement
+    }
 }

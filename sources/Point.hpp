@@ -8,7 +8,7 @@ class Point {
 public:
     Point();
     Point(double xar, double yar);
-    double distance(Point p);
+    double distance(Point poi);
     void print();
     Point moveTowards(Point source, Point destination, double distance);
 

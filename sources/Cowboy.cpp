@@ -3,7 +3,7 @@
 using namespace ariel;
 
 // Constructor
-Cowboy::Cowboy(const std::string name, Point location) : Character(name, location) {
+Cowboy::Cowboy(string name, Point location) : Character(name, location) {
     // TODO: Implement
 }
 

@@ -17,8 +17,23 @@ private:
     void optimizeAttackOrder();
 
 public:
+    // Regular constructor
     SmartTeam(Character *leader);
+
+    // Copy constructor
+    SmartTeam(const SmartTeam& other);
+
+    // Move constructor
+    SmartTeam(SmartTeam&& other) noexcept;
+
+    // Destructor
     ~SmartTeam();
+
+    // Copy assignment operator
+    SmartTeam& operator=(const SmartTeam& other);
+
+    // Move assignment operator
+    SmartTeam& operator=(SmartTeam&& other) noexcept;
 
     void add(Character *fighter);
     void attack(SmartTeam &enemyTeam);
@@ -29,6 +44,5 @@ public:
     const std::vector<Character *> &getFighters() const;
 };
 }
-
 
 #endif // SMARTTEAM_HPP

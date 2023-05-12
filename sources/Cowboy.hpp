@@ -9,7 +9,7 @@ private:
     int bullets;
 
 public:
-    Cowboy(const std::string name,Point location);
+    Cowboy(string name,Point location);
 
     void shoot(Character* enemy);
 

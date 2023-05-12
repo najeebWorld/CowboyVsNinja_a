@@ -1,4 +1,3 @@
-
 #include <vector>
 #include "Point.hpp"
 #include "Ninja.hpp"
@@ -7,18 +6,32 @@
 #include "OldNinja.hpp"
 #include "TrainedNinja.hpp"
 #include "YoungNinja.hpp"
-namespace ariel
-{
-    class Team
-    {
-        
-        private:
+
+namespace ariel {
+    class Team {
+    private:
         Character* leader;
-        vector<Character*> war{10};
-       
-       public:
+        std::vector<Character*> war;
+    
+    public:
+        // Regular constructor
         Team(Character* character);
+
+        // Copy constructor
+        Team(const Team& other);
+
+        // Copy assignment operator
+        Team& operator=(const Team& other);
+
+        // Move constructor
+        Team(Team&& other) noexcept;
+
+        // Move assignment operator
+        Team& operator=(Team&& other) noexcept;
+
+        // Destructor
         ~Team();
+
         void add(Character* warrior);
         void attack(Team* enemies);
         int stillAlive();

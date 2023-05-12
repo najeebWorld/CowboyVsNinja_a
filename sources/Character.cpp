@@ -1,60 +1,59 @@
 #include "Character.hpp"
-#include <string>
 
 using namespace ariel;
+    Character::Character(std::string Name, Point &location) {
+        // TODO: Implement
+    }
 
-// Constructor
-Character::Character(std::string Name, Point &location) {
-    // TODO: Implement
-}
+    Character::Character(const Character& other) {
+        // TODO: Implement
+    }
 
-// Copy constructor
-Character::Character(Character& other) {
-    // TODO: Implement
-}
+    Character::Character(Character&& other) noexcept {
+        // TODO: Implement
+    }
 
-// Destructor
-Character::~Character() {
-    // TODO: Implement
-}
+    Character::~Character() {
+        // TODO: Implement
+    }
 
-// Method to check if Character is alive
-bool Character::isAlive() {
-    // TODO: Implement
-    return false; // placeholder
-}
+    Character& Character::operator=(const Character& other) {
+        // TODO: Implement
+        return *this;
+    }
 
-// Method to calculate distance to other Character
-double Character::distance(Character* other) {
-    // TODO: Implement
-    return 0.0; // placeholder
-}
+    Character& Character::operator=(Character&& other) noexcept {
+        // TODO: Implement
+        return *this;
+    }
 
-// Method to apply damage to Character
-void Character::hit(int hitting_points) {
-    // TODO: Implement
-}
+    bool Character::isAlive() {
+        // TODO: Implement
+        return false; // placeholder
+    }
 
-// Method to get the name of the Character
-std::string Character::getName() {
-    // TODO: Implement
-    return ""; // placeholder
-}
+    double Character::distance(Character* other) {
+        // TODO: Implement
+        return 0.0; // placeholder
+    }
 
-// Method to get the location of the Character
-Point Character::getLocation() {
-    // TODO: Implement
-    return Point(); // placeholder
-}
+    void Character::hit(int hitting_points) {
+        // TODO: Implement
+    }
 
-// Method to print the Character
-std::string Character::print() {
-    // TODO: Implement
-    return ""; // placeholder
-}
+    std::string Character::getName() {
+        // TODO: Implement
+        return ""; // placeholder
+    }
 
-// Copy assignment operator
-Character& Character::operator=(const Character& other) {
-    // TODO: Implement
-    return *this; // placeholder
-}
+    Point Character::getLocation() {
+        // TODO: Implement
+        return Point(); // placeholder
+    }
+
+    std::string Character::print() {
+        // TODO: Implement
+        return ""; // placeholder
+    }
+
+

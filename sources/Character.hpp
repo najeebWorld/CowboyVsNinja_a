@@ -5,7 +5,8 @@
 #include "Point.hpp"
 #include <string>
 
-namespace ariel{
+namespace ariel {
+
 class Character {
 private:
     Point location;
@@ -14,19 +15,23 @@ private:
     char type;
 
 public:
-    Character(string Name, Point &location);
-    Character(Character& other);
+    Character(std::string Name, Point &location);
+    Character(const Character& other); // Copy constructor should take const reference
+    Character(Character&& other) noexcept; // Move constructor
 
     virtual ~Character();
+    
+    Character& operator=(const Character& other); // Copy assignment operator
+    Character& operator=(Character&& other) noexcept; // Move assignment operator
+
     virtual bool isAlive();
     virtual double distance(Character* other);
     virtual void hit(int hitting_points);
-    virtual string getName();
+    virtual std::string getName();
     virtual Point getLocation();
-    virtual string print();
-
-    Character& operator=(const Character& other);
+    virtual std::string print();
 };
+
 }
 
 #endif // CHARACTER_HPP

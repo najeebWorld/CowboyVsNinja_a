@@ -2,47 +2,64 @@
 
 using namespace ariel;
 
-// Private Methods
-void SmartTeam::chooseNewLeader() {
-    // TODO: Implement
-}
+    SmartTeam::SmartTeam(Character *leader) {
+        // TODO: Implement
+    }
 
-Character* SmartTeam::findOptimalVictim(const SmartTeam &enemyTeam) const {
-    // TODO: Implement
-    return nullptr; // Placeholder
-}
+    SmartTeam::SmartTeam(const SmartTeam& other) {
+        // TODO: Implement
+    }
 
-void SmartTeam::optimizeAttackOrder() {
-    // TODO: Implement
-}
+    SmartTeam::SmartTeam(SmartTeam&& other) noexcept {
+        // TODO: Implement
+    }
 
-// Public Methods
-SmartTeam::SmartTeam(Character *leader) {
-    // TODO: Implement
-}
+    SmartTeam::~SmartTeam() {
+        // TODO: Implement
+    }
 
-SmartTeam::~SmartTeam() {
-    // TODO: Implement
-}
+    SmartTeam& SmartTeam::operator=(const SmartTeam& other) {
+        // TODO: Implement
+        return *this; // placeholder
+    }
 
-void SmartTeam::add(Character *fighter) {
-    // TODO: Implement
-}
+    SmartTeam& SmartTeam::operator=(SmartTeam&& other) noexcept {
+        // TODO: Implement
+        return *this; // placeholder
+    }
 
-void SmartTeam::attack(SmartTeam &enemyTeam) {
-    // TODO: Implement
-}
+    void SmartTeam::add(Character *fighter) {
+        // TODO: Implement
+    }
 
-int SmartTeam::stillAlive() const {
-    // TODO: Implement
-    return 0; // Placeholder
-}
+    void SmartTeam::attack(SmartTeam &enemyTeam) {
+        // TODO: Implement
+    }
 
-void SmartTeam::print() const {
-    // TODO: Implement
-}
+    int SmartTeam::stillAlive() const {
+        // TODO: Implement
+        return 0; // placeholder
+    }
 
-const std::vector<Character *> &SmartTeam::getFighters() const {
-    // TODO: Implement
-    return fighters; // Placeholder
-}
+    void SmartTeam::print() const {
+        // TODO: Implement
+    }
+
+    const std::vector<Character *> &SmartTeam::getFighters() const {
+        // TODO: Implement
+        return fighters; // placeholder
+    }
+
+    void SmartTeam::chooseNewLeader() {
+        // TODO: Implement
+    }
+
+    Character *SmartTeam::findOptimalVictim(const SmartTeam &enemyTeam) const {
+        // TODO: Implement
+        return nullptr; // placeholder
+    }
+
+    void SmartTeam::optimizeAttackOrder() {
+        // TODO: Implement
+    }
+

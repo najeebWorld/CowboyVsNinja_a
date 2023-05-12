@@ -1,31 +1,40 @@
-namespace ariel{
-class Team2 {
-private:
-    std::vector<Character *> fighters;
-    Character *leader;
+#include "Point.hpp"
+#include "Ninja.hpp"
+#include "Character.hpp"
+#include "Cowboy.hpp"
+#include "OldNinja.hpp"
+#include "TrainedNinja.hpp"
+#include "YoungNinja.hpp"
+#include <vector>
 
-    void chooseNewLeader();
-    Character *findClosestLivingCharacter(Character *reference) const;
+namespace ariel {
+    class Team2 {
+    private:
+        std::vector<Character *> fighters;
+        Character *leader;
 
-public:
-    // Copy constructor
-    Team2(const Team2& other);
+        void chooseNewLeader();
+        Character *findClosestLivingCharacter(Character *reference) const;
 
-    // Copy assignment operator
-    Team2& operator=(const Team2& other);
+    public:
+        // Copy constructor
+        Team2(const Team2& other);
 
-    // Move constructor
-    Team2(Team2&& other) noexcept;
+        // Copy assignment operator
+        Team2& operator=(const Team2& other);
 
-    // Move assignment operator
-    Team2& operator=(Team2&& other) noexcept;
+        // Move constructor
+        Team2(Team2&& other) noexcept;
 
-    Team2(Character *leader);
-    ~Team2();
+        // Move assignment operator
+        Team2& operator=(Team2&& other) noexcept;
 
-    void add(Character *fighter);
-    void attack(Team2 &enemyTeam);
-    int stillAlive() const;
-    void print() const;
-};
+        Team2(Character *leader);
+        ~Team2();
+
+        void add(Character *fighter);
+        void attack(Team2 &enemyTeam);
+        int stillAlive() const;
+        void print() const;
+    };
 }
