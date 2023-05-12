@@ -4,6 +4,7 @@
 #pragma once
 #include "Point.hpp"
 #include <string>
+using namespace std;
 
 namespace ariel {
 
@@ -15,7 +16,7 @@ private:
     char type;
 
 public:
-    Character(std::string Name, Point &location);
+    Character(string Name, Point location);
     Character(const Character& other); // Copy constructor should take const reference
     Character(Character&& other) noexcept; // Move constructor
 

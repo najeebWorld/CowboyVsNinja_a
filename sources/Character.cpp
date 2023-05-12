@@ -1,7 +1,7 @@
 #include "Character.hpp"
 
 using namespace ariel;
-    Character::Character(std::string Name, Point &location) {
+    Character::Character(std::string Name, Point location) {
         // TODO: Implement
     }
 

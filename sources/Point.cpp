@@ -25,3 +25,7 @@ Point Point::moveTowards(Point source, Point destination, double distance) {
     // TODO: Implement
     return Point();  // Placeholder
 }
+
+double Point :: gitX(){return this->x_;}
+double Point :: gitY(){return this->y_;}
+

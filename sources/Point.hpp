@@ -11,7 +11,9 @@ public:
     double distance(Point poi);
     void print();
     Point moveTowards(Point source, Point destination, double distance);
-
+    double gitX();
+    double gitY();
+    
 private:
     double x_;
     double y_;
